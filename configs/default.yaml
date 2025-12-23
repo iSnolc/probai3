@@ -1,0 +1,14 @@
+EGNN:
+  hidden_nf: 128
+  n_layers: 3
+  equivariant: true
+
+DDPM:
+  N: 1000
+
+Training:
+  epochs: 60
+  lr: 0.0005
+  batch_size: 64
+  checkpoint_name: "egnn_checkpoint.pth"
+  device: "cuda:1"

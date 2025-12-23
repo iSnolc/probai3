@@ -1,0 +1,16 @@
+EGNN:
+  hidden_nf: 64
+  n_layers: 2
+  in_node_nf: 6 # 5 from one hot encoding atom type + 1 for time
+  out_node_nf: 5 # for the ont hot prediction of atom types
+  equivariant: true
+
+DDPM:
+  N: 100 # Lower N for demo
+
+Training:
+  epochs: 2
+  lr: 0.001
+  batch_size: 4
+  checkpoint_name: "demo_egnn_checkpoint.pth"
+  device: "cuda:1"
